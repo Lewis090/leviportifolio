@@ -1,35 +1,35 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio Project</title>
+    <title>Lista de compras</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Angela portifolio</h1>
-    <h2> I am a Programer</h2>
-    <hr/>
-    <h3><a href="./public/movie-ranking.html">Movie Ranking project</a></h3>
-    <img src="./assets/images/movie-ranking.png" height="200" alt="Movie ranking preview"/>
-    <h3><a href="./public/birthday-invite.html">Birthday Invite project</a></h3>
-    <img src="./assets/images/birthday-invite.png"height="200" alt="Birthday invite" alt="Birthday Invite"/>
-    <hr/>
-    <a href="./public/about.html">About me</a>
-    <a href="./public/contact.html">Contact Me</a>
-    
+    <div class="box">
+        <div id="cadastro">
+            <h1>Lista de compras</h1>
+            <p>Nome do produto</p>
+            <input type="text" id="produto">
+            <p>Preço do produto</p>
+            <input type="number" id="preco">
+            <p>Quantidade do produto</p>
+            <input type="number" id="qtd"></br>
+            <br>
+            <button type="submit" class='button' onclick="adicionar()">Adicionar</button>
+        </div>
+        <div class="lista">
+            <ul id="lista"></ul>
+        </div>
+        <div>
+            <p id="total">Total: R$ 0.00</p>
+        </div>
+    </div>
+
 </body>
+<script src="script.js"></script>
+
 </html>
-<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
-
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
-
-<!-- TODO 4: Add titles/subtitles etc. -->
-
-<!-- TODO 5: Add a link to the project pages -->
-
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
-
-<!-- TODO 7: Add the Contact Me and About Me page links -->
